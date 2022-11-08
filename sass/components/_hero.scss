@@ -1,44 +1,56 @@
 .hero {
   background-color: var(--secondary-bg-color);
   background-image: var(--gradient-hero-color),
-    url(/images/heroimg/mobhero-1x.jpg);
+    url(../images/heroimg/mobhero-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
 
 
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: var(--gradient-hero-color),
-  //     url(/images/heroimg/mobhero-2x.jpg);
-  // }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: var(--gradient-hero-color),
+      url(../images/heroimg/mobhero-2x.jpg);
+  }
+
+
 
   @media screen and (min-width: 768px) {
     background-image: var(--gradient-hero-color),
-      url(/images/heroimg/tabhero-1x.jpg);
+      url(../images/heroimg/tabhero-1x.jpg);
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: var(--gradient-hero-color),
-    //     url(/images/heroimg/tabhero-2x.jpg);
-    // }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--gradient-hero-color),
+        url(../images/heroimg/tabhero-2x.jpg);
+      }
+
+
   }
+
+
 
   @media screen and (min-width: 1200px) {
     background-image: var(--gradient-hero-color),
-      url(/images/heroimg/deskhero-1x.jpg);
+      url(../images/heroimg/hero-1x.jpg);
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: var(--gradient-hero-color),
-    //     url(/images/heroimg/deskhero-2x.jpg);
-    // }
-  }
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--gradient-hero-color),
+        url(../images/heroimg/hero-2x.jpg);
+    }
+
+
+
 }
+
+}
+
 
 .hero__box {
   padding-top: 118px;
